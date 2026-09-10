@@ -28,15 +28,19 @@
   </header>
 
   <!-- Timeline Cards Section -->
-  <section class="timeline">
+  <div class="timeline-container">
+    <!-- Navigation Buttons -->
+    <button class="scroll-btn scroll-btn-left" onclick="scrollTimeline(-300)">❮</button>
+    <button class="scroll-btn scroll-btn-right" onclick="scrollTimeline(300)">❯</button>
+    
+    <section class="timeline" id="timelineScroll">
 
     <!-- Card 1: 1968 -->
     <div class="card">
-      <h2>1968</h2>
-      <h3>Intel Founded</h3>
-      <!-- Add image -->
-       <img src="img/1.jpg" alt="Intel Founders" />
-      <p>
+      <h2 class="card-year">1968</h2>
+      <h3 class="card-title">Intel Founded</h3>
+       <img src="img/1.jpg" alt="Intel Founders" class="card-img" />
+      <p class="card-text">
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
         decades of technological innovation.
@@ -45,11 +49,10 @@
 
     <!-- Card 2: 1971 -->
     <div class="card">
-      <h2>1971</h2>
-      <h3>First Microprocessor</h3>
-      <!-- Add image -->
-      <img src="img/4004.jpg" alt="Intel 4004 Microprocessor" />
-      <p>
+      <h2 class="card-year">1971</h2>
+      <h3 class="card-title">First Microprocessor</h3>
+      <img src="img/4004.jpg" alt="Intel 4004 Microprocessor" class="card-img" />
+      <p class="card-text">
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
         of computing devices.
@@ -58,10 +61,10 @@
 
     <!-- Card 3: 1978 -->
     <div class="card">
-      <h2>1978</h2>
-      <h3>8086 Processor</h3>
-      <!-- Add image -->
-      <img src="img/3.jpg" alt="Intel 8086 Processor" />
+      <h2 class="card-year">1978</h2>
+      <h3 class="card-title">8086 Processor</h3>
+      <img src="img/3.jpg" alt="Intel 8086 Processor" class="card-img" />
+      <p class="card-text">
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
       </p>
@@ -69,11 +72,10 @@
 
     <!-- Card 4: 1985 -->
     <div class="card">
-      <h2>1985</h2>
-      <h3>386 Processor</h3>
-      <!-- Add image -->
-       <img src="img/intel386.jpg" alt="Intel 386 Processor" />
-      <p>
+      <h2 class="card-year">1985</h2>
+      <h3 class="card-title">386 Processor</h3>
+       <img src="img/intel386.jpg" alt="Intel 386 Processor" class="card-img" />
+      <p class="card-text">
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
         personal computers.
@@ -82,11 +84,10 @@
 
     <!-- Card 5: 2006 -->
     <div class="card">
-      <h2>2006</h2>
-      <h3>Peak GHG Emissions</h3>
-      <!-- Add image -->
-       <img src="img/greenhouseemissions.jpg" alt="Intel Manufacturing Plant" />
-      <p>
+      <h2 class="card-year">2006</h2>
+      <h3 class="card-title">Peak GHG Emissions</h3>
+       <img src="img/greenhouseemissions.jpg" alt="Intel Manufacturing Plant" class="card-img" />
+      <p class="card-text">
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
         chemical abatement, renewable energy, and energy-efficient 
@@ -96,11 +97,10 @@
 
     <!-- Card 6: 2020 -->
     <div class="card">
-      <h2>2020</h2>
-      <h3>RISE Strategy</h3>
-      <!-- Add image -->
-       <img src="img/IntelRise.png" alt="Intel RISE Strategy" />
-      <p>
+      <h2 class="card-year">2020</h2>
+      <h3 class="card-title">RISE Strategy</h3>
+       <img src="img/IntelRise.png" alt="Intel RISE Strategy" class="card-img" />
+      <p class="card-text">
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
         progress on climate action, water stewardship, and waste reduction.
@@ -109,10 +109,10 @@
 
     <!-- Card 7: 2022 -->
     <div class="card">
-      <h2>2022</h2>
-      <h3>Net-Zero By 2040</h3>
-      <!-- Add image -->
-      <p>
+      <h2 class="card-year">2022</h2>
+      <h3 class="card-title">Net-Zero By 2040</h3>
+      <img src="img/IntelNetZero.jpg" alt="Intel Net-Zero Commitment" class="card-img" />
+      <p class="card-text">
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
         by 2040, building on years of environmental initiatives.
@@ -121,10 +121,10 @@
 
     <!-- Card 8: 2023 -->
     <div class="card">
-      <h2>2023</h2>
-      <h3>Renewable Electricity</h3>
-      <!-- Add image -->
-      <p>
+      <h2 class="card-year">2023</h2>
+      <h3 class="card-title">Renewable Electricity</h3>
+      <img src="img/IntelRenew.jpg" alt="Renewable Energy Sources" class="card-img" />
+      <p class="card-text">
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
         toward Intel's long-term sustainability goals.
@@ -133,16 +133,28 @@
 
     <!-- Card 9: 2024 -->
     <div class="card">
-      <h2>2024</h2>
-      <h3>Sustainability Summit</h3>
-      <!-- Add image -->
-      <p>
+      <h2 class="card-year">2024</h2>
+      <h3 class="card-title">Sustainability Summit</h3>
+      <img src="img/intelSSummit.jpg" alt="Intel Sustainability Summit" class="card-img" />
+      <p class="card-text">
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
         next-generation sustainable semiconductor manufacturing.
       </p>
     </div>
-  </section>
+    </section>
+  </div>
   <p>Scroll to view timeline | Hover over cards to learn more!</p>
+  
+  <script>
+    // Function to scroll timeline left/right
+    function scrollTimeline(distance) {
+      const timeline = document.getElementById('timelineScroll');
+      timeline.scrollBy({
+        left: distance,
+        behavior: 'smooth'
+      });
+    }
+  </script>
 </body>
 </html>
