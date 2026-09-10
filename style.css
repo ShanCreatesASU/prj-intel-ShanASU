@@ -159,6 +159,7 @@ section.timeline > .card > .card-img {
   display: block;
   opacity: 0.75;
   transition: opacity 0.3s ease;
+   max-width: 200px;
 }
 
 /* Year heading overlay */
@@ -202,11 +203,12 @@ section.timeline > .card > .card-text {
   color: white;
   font-size: 0.95rem;
   line-height: 1.7;
-  padding: 180px 30px 30px 30px;
+  padding: 120px 30px 30px 30px;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   z-index: 3;
   overflow: hidden;
+text-shadow: 2px 0px black;
 }
 
 /* Show text overlay on card hover */
