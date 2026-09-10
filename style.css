@@ -35,7 +35,7 @@ body {
 header {
   background: linear-gradient(135deg, #0071c5 0%, #004b94 100%);
   color: white;
-  padding: 60px 20px;
+  padding: 90px 20px;
   text-align: center;
 }
 
@@ -47,9 +47,9 @@ header div {
 
 /* Logo image styling */
 header img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 20px;
+  max-width: 200px;
+    height: auto;
+    margin-bottom: 50px;
 }
 
 /* Main heading */
